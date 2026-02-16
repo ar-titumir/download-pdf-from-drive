@@ -57,8 +57,6 @@ No command-line arguments required — everything is controlled from a clean des
 
 ## 🖼️ GUI Preview
 
-> ✏️ Replace image links below with your uploaded screenshot links
-
 ### 🔹 Main Window
 
 ![Main GUI Screenshot](https://github.com/user-attachments/assets/48b72900-2104-4ba4-9fda-0a20761d0bc9)
