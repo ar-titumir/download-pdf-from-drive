@@ -279,13 +279,19 @@ You can monitor:
 You can run the tool without GUI.
 
 ### Single file
+```
 python cli.py "DRIVE_URL" -o output.pdf
+```
 
 ### Batch
+```
 python cli.py links.txt -d output_folder
+```
 
 ### Disable sound
+```
 python cli.py links.txt --no-sound
+```
 
 ---
 
