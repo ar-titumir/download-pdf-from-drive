@@ -137,6 +137,7 @@ download-pdf-from-drive/
 │   └── app.log
 │
 ├── requirements.txt
+├── LICENSE
 └── README.md
 ```
 
@@ -322,4 +323,11 @@ Future improvements:
 GitHub: [https://github.com/ar-titumir](https://github.com/ar-titumir)
 
 If this project helped you, give it a ⭐
+
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+See the LICENSE file for details.
 
