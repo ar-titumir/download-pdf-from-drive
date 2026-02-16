@@ -1,9 +1,32 @@
+# 🔥 Google Drive PDF Downloader – Download Preview Files Without Print or Download Permission (GUI Tool)
 
-# Google Drive PDF Downloader (GUI Version)
+A powerful **Python GUI application** that allows you to download Google Drive preview files and convert them into a high-quality PDF — even when **Print and Download options are disabled**.
 
-This repository provides a **Beautiful GUI application** to download preview images from a **Google Drive file** and automatically convert them into a PDF.
+This tool extracts preview images directly from the browser and compiles them into a complete PDF automatically.
 
-Built using:
+🚀 Perfect for:
+- View-only Google Drive files
+- Disabled print/download documents
+- Online course materials
+- Shared study notes
+
+---
+
+## 📌 Why This Tool?
+
+Many Google Drive files disable:
+- ❌ Download option
+- ❌ Print option
+- ❌ Save as PDF
+
+This application works by extracting preview images directly from the browser session and rebuilding the full PDF locally.
+
+⚠️ **Important:** Use responsibly and only for content you have permission to access.
+
+---
+
+## 🛠 Built With
+
 - Python
 - Tkinter (GUI)
 - Selenium (Chrome Automation)
@@ -11,19 +34,21 @@ Built using:
 - FPDF
 - WebDriver Manager
 
-No command line arguments required — everything is controlled from the GUI.
+No command-line arguments required — everything is controlled from a clean desktop interface.
 
 ---
 
 ## ✅ Features
 
-- 🖥️ Simple GUI interface
-- 🔗 Single Google Drive link download
+- 🖥️ Clean and Simple GUI
+- 🔓 Works even if Print/Download is disabled
+- 🔗 Single Google Drive link mode
 - 📂 Batch mode using `.txt` file
 - 📁 Custom PDF save directory
-- 📄 Auto PDF name generation (timestamp support)
+- 📄 Auto PDF naming (timestamp support)
 - 🔔 Sound notification after completion
-- 🚀 Automatic ChromeDriver management
+- 🚀 Automatic ChromeDriver installation
+- 🔄 Opens browser only once for batch processing
 
 ---
 
@@ -96,6 +121,8 @@ Required libraries:
 ```sh
 python app2.py
 ```
+### Alternative
+Just *double click* the `run_app2.bat` file to run the GUI!
 
 The GUI window will open.
 
