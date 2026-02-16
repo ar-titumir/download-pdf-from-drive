@@ -7,8 +7,6 @@ This tool extracts preview images directly from the browser and compiles them in
 🚀 Perfect for:
 - View-only Google Drive files
 - Disabled print/download documents
-- Online course materials
-- Shared study notes
 
 ---
 
@@ -174,7 +172,6 @@ ChromeDriver is automatically handled by `webdriver-manager`.
 ## ⚠️ Notes
 
 * Keep Google Chrome updated
-* Internet connection required
 * Works only for previewable Drive files
 * Browser window must remain open during processing
 * Windows only (uses `winsound`)
@@ -188,7 +185,6 @@ download-pdf-from-drive/
 ├── app2.py
 ├── requirements.txt
 ├── README.md
-└── temp_imgs/   (auto-created)
 ```
 
 ---
