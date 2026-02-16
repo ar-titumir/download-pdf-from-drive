@@ -61,19 +61,19 @@ No command-line arguments required — everything is controlled from a clean des
 
 ### 🔹 Main Window
 
-![Main GUI Screenshot](YOUR_SCREENSHOT_LINK_HERE)
+![Main GUI Screenshot](https://github.com/user-attachments/assets/48b72900-2104-4ba4-9fda-0a20761d0bc9)
 
 ---
 
 ### 🔹 Running Process
 
-![Processing Screenshot](YOUR_SCREENSHOT_LINK_HERE)
+![Processing Screenshot](https://github.com/user-attachments/assets/d2aeb849-464e-4b5d-9815-abd866706bba)
 
 ---
 
 ### 🔹 Batch Mode Example
 
-![Batch Mode Screenshot](YOUR_SCREENSHOT_LINK_HERE)
+![Batch Mode Screenshot](https://github.com/user-attachments/assets/6aa7c5b2-e637-489f-b0a5-00d7c3915372)
 
 ---
 
@@ -109,7 +109,7 @@ Required libraries:
 
 * selenium
 * Pillow
-* fpdf
+* fpdf2
 * webdriver-manager
 
 ---
