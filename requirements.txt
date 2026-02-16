@@ -1,4 +1,4 @@
-selenium==4.35.0
-Pillow==9.5.0
-fpdf==1.7.2
-webdriver-manager==4.0.2
+fpdf2==2.8.5
+Pillow==12.1.1
+selenium==4.40.0
+webdriver_manager==4.0.2

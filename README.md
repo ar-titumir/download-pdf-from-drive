@@ -67,4 +67,3 @@ PDF_Download/
 ├── README.md
 └── images/          # folder to save images
 ```
-
