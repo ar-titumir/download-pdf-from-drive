@@ -1,69 +1,197 @@
+# 🔥 Google Drive PDF Downloader – Download Preview Files Without Print or Download Permission (GUI Tool)
 
-# Google Drive PDF Downloader
+A powerful **Python GUI application** that allows you to download Google Drive preview files and convert them into a high-quality PDF — even when **Print and Download options are disabled**.
 
-This Python script downloads images from a Google Drive file preview and compiles them into a PDF.
+This tool extracts preview images directly from the browser and compiles them into a complete PDF automatically.
 
-## Requirements
+🚀 Perfect for:
+- View-only Google Drive files
+- Disabled print/download documents
 
-- Python 3.x
-- Libraries listed in `requirements.txt`:
-  - selenium
-  - Pillow
-  - fpdf2
-  - webdriver-manager
+---
 
-Install dependencies with:
+## 📌 Why This Tool?
 
-```bash
-pip install -r requirements.txt
+Many Google Drive files disable:
+- ❌ Download option
+- ❌ Print option
+- ❌ Save as PDF
+
+This application works by extracting preview images directly from the browser session and rebuilding the full PDF locally.
+
+⚠️ **Important:** Use responsibly and only for content you have permission to access.
+
+---
+
+## 🛠 Built With
+
+- Python
+- Tkinter (GUI)
+- Selenium (Chrome Automation)
+- Pillow
+- FPDF
+- WebDriver Manager
+
+No command-line arguments required — everything is controlled from a clean desktop interface.
+
+---
+
+## ✅ Features
+
+- 🖥️ Clean and Simple GUI
+- 🔓 Works even if Print/Download is disabled
+- 🔗 Single Google Drive link mode
+- 📂 Batch mode using `.txt` file
+- 📁 Custom PDF save directory
+- 📄 Auto PDF naming (timestamp support)
+- 🔔 Sound notification after completion
+- 🚀 Automatic ChromeDriver installation
+- 🔄 Opens browser only once for batch processing
+
+---
+
+## 🎥 Demo Video
+[![Watch the Demo](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
+---
+
+## 🖼️ GUI Preview
+
+### 🔹 Main Window
+
+![Main GUI Screenshot](https://github.com/user-attachments/assets/48b72900-2104-4ba4-9fda-0a20761d0bc9)
+
+---
+
+### 🔹 Running Process
+
+![Processing Screenshot](https://github.com/user-attachments/assets/d2aeb849-464e-4b5d-9815-abd866706bba)
+
+---
+
+### 🔹 Batch Mode Example
+
+![Batch Mode Screenshot](https://github.com/user-attachments/assets/6aa7c5b2-e637-489f-b0a5-00d7c3915372)
+
+---
+
+## 🚀 How to Run
+
+Make sure you have Python installed.
+
+### 1️⃣ Clone this repository
+
+```sh
+git clone https://github.com/ar-titumir/download-pdf-from-drive.git
+cd download-pdf-from-drive
 ````
 
 ---
 
-## Usage
+### 2️⃣ Create Virtual Environment (Recommended)
 
-The script takes **3 arguments**:
-
-1. **Google Drive file URL** – the link to the file you want to download.
-2. **Image folder** – the folder where the downloaded images will be saved.
-3. **PDF file path** – the full path (including filename) where the final PDF will be saved.
-
----
-
-### Sample Command
-
-```bash
-python downloader.py "https://drive.google.com/file/d/1JmzbGrCIPiiJzPMPENClHHuhX4OoYJAe/view" "E:\__init__()\__Job_prep__\Jahid Sakib course\img" "E:\__init__()\__Job_prep__\Jahid Sakib course\JFET (full).pdf"
-```
-
-* This will download the images from the given Google Drive link into the folder:
-
-```
-E:\__init__()\__Job_prep__\Jahid Sakib course\img
-```
-
-* Then it will compile them into the PDF:
-
-```
-E:\__init__()\__Job_prep__\Jahid Sakib course\JFET (full).pdf
+```sh
+python -m venv venv
+venv\Scripts\activate
 ```
 
 ---
 
-## Notes
+### 3️⃣ Install Dependencies
 
-* Make sure the **image folder exists** or the script will create it.
-* Only pass a **full PDF filename** in the third argument — passing a folder alone will cause a `PermissionError`.
-* Avoid having parentheses `()` in folder names if possible, as some systems may misinterpret them.
+```sh
+pip install -r requirements.txt
+```
+
+Required libraries:
+
+* selenium
+* Pillow
+* fpdf2
+* webdriver-manager
 
 ---
 
-## Example Folder Structure
+### 4️⃣ Run the Application
+
+```sh
+python app2.py
+```
+### Alternative
+Just *double click* the `run_app2.bat` file to run the GUI!
+
+The GUI window will open.
+
+---
+
+## 🖥️ How to Use the GUI
+
+### 🔹 Single File Mode
+
+1. Paste Google Drive preview URL
+2. Enter PDF name (optional)
+3. Select PDF save directory
+4. Click **Run**
+
+If no PDF name is provided → timestamp name will be used.
+
+---
+
+### 🔹 Batch Mode
+
+1. Create a `.txt` file like this:
 
 ```
-PDF_Download/
-├── downloader.py
+https://drive.google.com/file/abc123/view "Physics Full Book"
+https://drive.google.com/file/xyz456/view "Math Notes"
+```
+
+2. Select the text file using **Browse**
+3. Choose output directory
+4. Click **Run**
+
+Each line supports quoted PDF names.
+
+---
+
+## ⚙️ How It Works
+
+* Selenium opens Google Drive preview
+* Scrolls through all preview pages
+* Extracts blob images using JavaScript canvas
+* Saves images locally
+* Converts all images into a single PDF
+* Closes browser after completion
+
+ChromeDriver is automatically handled by `webdriver-manager`.
+
+---
+
+## ⚠️ Notes
+
+* Keep Google Chrome updated
+* Works only for previewable Drive files
+* Browser window must remain open during processing
+* Windows only (uses `winsound`)
+
+---
+
+## 📂 Project Structure
+
+```
+download-pdf-from-drive/
+├── app2.py
 ├── requirements.txt
 ├── README.md
-└── images/          # folder to save images
 ```
+
+---
+
+## 📌 Author
+
+Created by **ar_titumir**
+[https://github.com/ar-titumir](https://github.com/ar-titumir)
+
+If this project helps you, please give it a ⭐ on GitHub.
+
+If you want, I can now make a **more professional GitHub-style version with badges and cleaner formatting**.
