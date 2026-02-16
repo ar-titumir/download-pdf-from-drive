@@ -131,6 +131,7 @@ download-pdf-from-drive/
 ├── gui.py               # GUI logic
 ├── scraper.py           # Selenium + PDF builder
 ├── utils.py             # logging + helpers
+├── cli.py               # cli version 
 │
 ├── logs/
 │   └── app.log
@@ -270,6 +271,23 @@ You can monitor:
 * batch progress
 
 ---
+
+
+## 🖥 CLI Mode
+
+You can run the tool without GUI.
+
+### Single file
+python cli.py "DRIVE_URL" -o output.pdf
+
+### Batch
+python cli.py links.txt -d output_folder
+
+### Disable sound
+python cli.py links.txt --no-sound
+
+---
+
 
 ## 🛣 Roadmap
 
